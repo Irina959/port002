@@ -55,9 +55,15 @@ body{
     font-family: Roboto;
     color: #ffffff;
     background: #ffffff;
-    width: 1920px;
-    overflow: scroll;
+    overflow: hidden;
 }
+
+.wrapper {
+    margin: 0 auto;
+	max-width: 1920px;
+	width: 100%;   
+}
+
 
 /*Header*/
 
