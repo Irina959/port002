@@ -3,28 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/02534f7fdf.js" crossorigin="anonymous"></script>
 
 	<title>Kherson port</title>
 </head>
 <body>
-	<wrapper>
+	<div class="wrapper">
 	<!-- Header -->
 	<header class="header">
 			<div class="header__inner">
 					<img class="header__logo" src="images/logo.png" alt="">
-				<nav>
-					<ul class="menu">
-						<li><a href="#">Головна</a></li>
-						<li><a href="#">Про порт</a></li>
-						<li><a href="#">Термінал</a></li>
-						<li><a href="#">Тендери</a></li>
-						<li><a href="#">Розклад судів</a></li>
-						<li><a href="#">Проект реконструкції</a></li>
-						<li><a href="#">Новини</a></li>
-						<li><a href="#">Вакансії</a></li>
-						<li><a href="#">Контакти</a></li>
+					<div class="header__burger">
+						<span></span>
+					</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a class="header__link" href="#">Головна</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Про порт</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Термінал</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Тендери</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Розклад судів</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Проект реконструкції</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Новини</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Вакансії</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Контакти</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -32,11 +53,14 @@
 
 	<!-- Intro -->
 	<div class="intro">
-		<div class="intro__inner">
+		<video class="video" autoplay="" loop="loop" muted="muted" poster="images/Rectangle 1.jpg" 	controlslist="nodownload" playsinline="" type="video/mp4">
+			<source src="video/main-video.mp4">
+		</video>
+		<div class="intro__inner" id="intro">
 			<div class="intro__title">
 				<h4>ТОВ Херсонский порт</h4>
 				<a href="#">
-					<img src="images/arrow.png" alt="">
+					<div class="arrow-white"></div>
 				</a>
 				<h1>Морські ворота <br> Дніпра</h1>
 			</div>
@@ -63,70 +87,48 @@
 	<!-- Services -->
 	<div class="services">
 		<div class="serv__item">
-			<img src="images/zernivi.png" alt="">
-			<div class="serv__content">
-				<div class="serv__title">Перевалка генеральних вантажів</div>
-					<div class="btn">
-						<div class="details">Детальніше</div>
-						<a href="#">
-							<img src="images/arrow.png" alt="">
-						</a>
-					</div>
-			</div>
+			<video class="video__item" autoplay="" loop="loop" muted="muted" poster="images/zernivi.png" 	controlslist="nodownload" playsinline="" type="video/mp4">
+			<source src="video/zarnivi.mp4">
+			</video>
+			<div class="serv__title">Перевалка генеральних вантажів</div>
+			<a href="#" class="arrow-big-white"></a>
 		</div>
 		<div class="serv__item">
-			<img src="images/pogryzka.png" alt="">
-			<div class="serv__content">
-				<div class="serv__title">Зберігання та завантаження зернових вантажів</div>
-					<div class="btn">
-						<div class="details">Детальніше</div>
-						<a href="#">
-							<img src="images/arrow.png" alt="">
-						</a>
-					</div>
-			</div>
+			<video class="video__item" autoplay="" loop="loop" muted="muted" poster="images/pogryzka.png" 	controlslist="nodownload" playsinline="" type="video/mp4">
+			<source src="video/pogryzka.mp4">
+			</video>
+			<div class="serv__title">Зберігання та завантаження зернових вантажів</div>
+			<a href="#" class="arrow-big-white"></a>
 		</div>
 		<div class="serv__item">
-			<img src="images/dobpeska.png" alt="">
-			<div class="serv__content">
-				<div class="serv__title">Видобуток піску</div>
-					<div class="btn">
-						<div class="details">Детальніше</div>
-						<a href="#">
-							<img src="images/arrow.png" alt="">
-						</a>
-					</div>
-			</div>
+			<video class="video__item" autoplay="" loop="loop" muted="muted" poster="images/dobpeska.png" 	controlslist="nodownload" playsinline="" type="video/mp4">
+			<source src="video/dobpeska.mp4">
+			</video>
+			<div class="serv__title">Видобуток піску</div>
+			<a href="#" class="arrow-big-white"></a>
 		</div>
 		<div class="serv__item">
-			<img src="images/portoflot.png" alt="">
-			<div class="serv__content">
-				<div class="serv__title">Портофлот</div>
-					<div class="btn">
-						<div class="details">Детальніше</div>
-						<a href="#">
-							<img src="images/arrow.png" alt="">
-						</a>
-					</div>
-			</div>
+			<video class="video__item" autoplay="" loop="loop" muted="muted" poster="images/portoflot.png" 	controlslist="nodownload" playsinline="" type="video/mp4">
+			<source src="video/portoflot-serv.mp4">
+			</video>
+			<div class="serv__title">Портофлот</div>
+			<a href="#" class="arrow-big-white"></a>
 		</div>
 	</div>
 
 	<!-- History -->
-	<div class="history">
+	<div class="history" id="about-port">
 		<div class="history__content">
-				<h2 class="history__title">історія порту</h2>
+				<h2 class="mb__title history__title">історія порту</h2>
 				<img class="history__img" src="images/Vector.svg" alt="">
 			<div class="history__text">
 				<p>В 1806 році будується верф торгового суднобудування, з якої щорічно спускалося на воду від 20 до 30 торгових суден. Відбувається постійне зростання економічних потреб міста, новий приплив робочої сили, збільшення кількості населення і обсягу будівництва.</p>
 				<p>У 1803 році Херсон отримує статус губернського центру, перший свій герб і починає розвиватися як торговий порт. На асигновані урядом кошти в 1806 році будується верф торгового суднобудування, з якої щорічно спускалося на воду від 20 до 30 торгових суден. Відбувається постійне зростання економічних потреб міста, новий приплив робочої сили, збільшення кількості населення і обсягу будівництва.</p>
 				<p>В 1806 році будується верф торгового суднобудування, з якої щорічно спускалося на воду від 20 до 30 торгових суден. Відбувається постійне зростання економічних потреб міста, новий приплив робочої сили, збільшення кількості</p>
-				<div class="btn">
+				<a class="btn">
 					<div class="details black">Детальніше</div>
-					<a href="#">
-						<img src="images/arrow-black.png" alt="">
-					</a>
-				</div>
+					<img class="arrow-black" src="images/arrow-black.png" alt="">
+				</a>
 			</div>
 			
 		</div>
@@ -139,13 +141,11 @@
 	<!-- Team -->
 	<div class="team">
 		<div class="team__content">
-			<h2>Управління порту та менеджмент.</h2>
-				<div class="btn">
+			<h2 class="mb__title">Управління порту та менеджмент.</h2>
+				<a class="btn">
 					<div class="details black">Детальніше</div>
-					<a href="#">
-						<img src="images/arrow-black.png" alt="">
-					</a>
-				</div>
+						<img class="arrow-black" src="images/arrow-black.png" alt="">
+				</a>
 		</div>
 		<div class="team__card">
 				<div class="team__name">Білогубова Лідія</div>
@@ -210,28 +210,24 @@
 		</div>
 		</div>
 			<div class="news__about">
-				<h2>Новини порту</h2>
-				<div class="btn">
+				<h2 class="mb__title">Новини порту</h2>
+				<a class="btn">
 					<div class="details black">Детальніше</div>
-					<a href="#">
-						<img src="images/arrow-black.png" alt="">
-					</a>
-				</div>
+					<img  class="arrow-black" src="images/arrow-black.png" alt="">
+				</a>
 			</div>
 	</div>
 
 	<!-- Contacts -->
 	<div class="contacts">
 		<div class="contacts__block">
-			<h2>Зв’язатися з нами.</h2>
-			<div class="btn">
-					<h5>Або перейти до контактів</h5>
-					<a href="#">
-						<img src="images/arrow-black.png" alt="">
-					</a>
-				</div>
+			<h2 class="mb__title contacts__title">Зв’язатися з нами</h2>
+			<a class="btn">
+				<div class="details black">Або перейти до контактів</div>
+				<img class="arrow-black" src="images/arrow-black.png" alt="">
+			</a>
 			</div>
-			<img class="contacts__img" src="images/Vector (2).png" alt="">
+			<img class="big-grey-arrow" src="images/Vector (2).png" alt="">
 				<div class="contacts__form">
 					<p>Заповніть вашу інформацію</p>
 					<form action="">
@@ -251,32 +247,31 @@
 				<div class="contacts__map">
 					<img src="images/map.png" alt="">
 					<img class="map__point" src="images/Group 14.png" alt="">
-						<div class="btn">
+						<a class="btn">
 							<div class="details black">Детальніше</div>
-							<a href="#">
-								<img src="images/arrow-black.png" alt="">
-							</a>
-						</div>
+							<img class="arrow-black" src="images/arrow-black.png" alt="">
+						</a>
 				</div>
 			</div>
-	</wrapper>
+	</div>
+	<script src="script.js"></script>
 </body>
 
 <!-- Footer -->
 
 <footer class="footer">
 	<div class="footer__inner">
-		<div class="container">
-			<img src="images/logo_footer.png" alt="">
+		<div class="footer__container">
+			<img class="footer__logo" src="images/logo_footer.png" alt="">
 				<div class="footer__text">
 					<span>ТОВ Херсонський порт</span>
 					<p>Морські ворота Дніпра</p>
 				</div>
 				<div class="footer__social">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-telegram-plane"></i></a>
+					<a href="#" class="social__link" ><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social__link" ><i class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="social__link" ><i class="fab fa-instagram"></i></a>
+					<a href="#" class="social__link" ><i class="fab fa-telegram-plane"></i></a>
 				</div>
 			</div>
 	<!-- /footer__nav -->
